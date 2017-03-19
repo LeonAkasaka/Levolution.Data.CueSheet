@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>f79e7330-1c0d-4604-923d-00b5228171d9</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Levolution.Data.CueSheet</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CueSheet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FileReference.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IAudioInformation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Index.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Track.cs" />
+  </ItemGroup>
+</Project>

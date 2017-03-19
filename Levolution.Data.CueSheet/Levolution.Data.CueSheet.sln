@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Levolution.Data.CueSheet.Pcl", "Levolution.Data.CueSheet.Pcl\Levolution.Data.CueSheet.Pcl.csproj", "{0C93EFD1-7258-4356-B595-BCD831F38D88}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Levolution.Data.CueSheet.Shared", "Levolution.Data.CueSheet.Shared\Levolution.Data.CueSheet.Shared.shproj", "{F79E7330-1C0D-4604-923D-00B5228171D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{D98FE5B0-D7CD-40E0-AED8-525806F19DBF}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Levolution.Data.CueSheet.Shared\Levolution.Data.CueSheet.Shared.projitems*{0c93efd1-7258-4356-b595-bcd831f38d88}*SharedItemsImports = 4
+		Levolution.Data.CueSheet.Shared\Levolution.Data.CueSheet.Shared.projitems*{f79e7330-1c0d-4604-923d-00b5228171d9}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C93EFD1-7258-4356-B595-BCD831F38D88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C93EFD1-7258-4356-B595-BCD831F38D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C93EFD1-7258-4356-B595-BCD831F38D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C93EFD1-7258-4356-B595-BCD831F38D88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D98FE5B0-D7CD-40E0-AED8-525806F19DBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D98FE5B0-D7CD-40E0-AED8-525806F19DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D98FE5B0-D7CD-40E0-AED8-525806F19DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D98FE5B0-D7CD-40E0-AED8-525806F19DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
