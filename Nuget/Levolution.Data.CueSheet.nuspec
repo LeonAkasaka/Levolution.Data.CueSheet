@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Levolution.Data.CueSheet</id>
+    <version>0.0.1.0</version>
+    <authors>Leon Akasaka</authors>
+    <owners>Leon Akasaka</owners>
+    <licenseUrl>https://github.com/LeonAkasaka/Levolution.Data.CueSheet/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/LeonAkasaka/Levolution.Data.CueSheet</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Levolution Data CueSheet.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Levolution</tags>
+  </metadata>
+  <files>
+    <file src="..\Levolution.Data.CueSheet.Pcl\bin\Release\*.*" target="lib\portable-net45+wp80+win8+wpa81+dnxcore50" />
+  </files>
+</package>
