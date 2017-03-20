@@ -9,6 +9,11 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Levolution.Data.CueSheet.Sh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{D98FE5B0-D7CD-40E0-AED8-525806F19DBF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{22908ABC-C2E5-4866-8A15-05B50ADDBC1D}"
+	ProjectSection(SolutionItems) = preProject
+		Nuget\Levolution.Data.CueSheet.nuspec = Nuget\Levolution.Data.CueSheet.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Levolution.Data.CueSheet.Shared\Levolution.Data.CueSheet.Shared.projitems*{0c93efd1-7258-4356-b595-bcd831f38d88}*SharedItemsImports = 4
