@@ -15,18 +15,18 @@ namespace Levolution.Data.CueSheet
         public int Number { get; set; }
 
         /// <summary>
-        /// Hour.
-        /// </summary>
-        public int Hour { get; set; }
-
-        /// <summary>
         /// Minute.
         /// </summary>
         public int Minute { get; set; }
-        
+
         /// <summary>
         /// Second.
         /// </summary>
         public int Second { get; set; }
+
+        /// <summary>
+        /// Frame.
+        /// </summary>
+        public int Frame { get; set; }
     }
 }

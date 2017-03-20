@@ -98,7 +98,7 @@ namespace Levolution.Data.CueSheet
                     case "INDEX":
                     {
                         var time = command[2].Split(':');
-                        var index = new Index() { Number = int.Parse(command[1]), Hour = int.Parse(time[0]), Minute = int.Parse(time[1]), Second = int.Parse(time[2]) };
+                        var index = new Index() { Number = int.Parse(command[1]), Minute = int.Parse(time[0]), Second = int.Parse(time[1]), Frame = int.Parse(time[2]) };
                         currentIndices.Add(index);
                         break;
                     }
