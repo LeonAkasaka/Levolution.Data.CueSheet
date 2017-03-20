@@ -28,5 +28,19 @@ namespace Levolution.Data.CueSheet
         /// Frame.
         /// </summary>
         public int Frame { get; set; }
+
+        public override string ToString()
+        {
+            var builder = new StringBuilder();
+            ToString(builder);
+            return builder.ToString();
+        }
+
+        internal void ToString(StringBuilder builder)
+        {
+            var num = Number.ToString("00");
+            var time = string.Format("{0:00}:{1:00}:{2:00}", Minute, Second, Frame);
+            builder.AppendLine($"    INDEX {num} {time}");
+        }
     }
 }

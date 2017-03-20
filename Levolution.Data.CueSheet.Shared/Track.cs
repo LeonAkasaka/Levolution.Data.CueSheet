@@ -38,5 +38,27 @@ namespace Levolution.Data.CueSheet
         /// Indices of this Track.
         /// </summary>
         public IEnumerable<Index> Indices { get; set; }
+
+        public override string ToString()
+        {
+            var builder = new StringBuilder();
+            ToString(builder);
+            return builder.ToString();
+        }
+
+        internal void ToString(StringBuilder builder)
+        {
+            var num = Number.ToString("00");
+            builder.AppendLine($"  TRACK {num} {Type}");
+
+            if (Title != null) { builder.AppendLine($"    TITLE {Title}"); }
+            if (Performer != null) { builder.AppendLine($"    PERFORMER {Performer}"); }
+            if (SongWriter != null) { builder.AppendLine($"    SONGWRITER {SongWriter}"); }
+
+            foreach(var index in Indices)
+            {
+                index.ToString(builder);
+            }
+        }
     }
 }

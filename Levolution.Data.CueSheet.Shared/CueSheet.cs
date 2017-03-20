@@ -48,8 +48,7 @@ namespace Levolution.Data.CueSheet
 
             foreach (var file in Files)
             {
-                builder.AppendLine($"FILE {file}");
-                foreach (var track in file.Tracks) { builder.AppendLine(track.ToString()); }
+               file.ToString(builder);
             }
 
             return builder.ToString();

@@ -23,5 +23,21 @@ namespace Levolution.Data.CueSheet
         /// Tracks.
         /// </summary>
         public IEnumerable<Track> Tracks { get; set; }
+
+        public override string ToString()
+        {
+            var builder = new StringBuilder();
+            ToString(builder);
+            return builder.ToString();
+        }
+
+        internal void ToString(StringBuilder builder)
+        {
+            builder.AppendLine($"FILE \"{Path}\" {Format}");
+            foreach (var track in Tracks)
+            {
+                track.ToString(builder);
+            }
+        }
     }
 }
