@@ -73,7 +73,11 @@ namespace Levolution.Data.CueSheet
                 var line = reader.ReadLine();
                 if (line == null) { break; }
 
-                var command = regex.Matches(line).Cast<object>().Select(x => x.ToString().Trim()).Where(x => !string.IsNullOrEmpty(x)).ToArray();
+                var command = regex.Matches(line)
+                    .Cast<object>()
+                    .Select(x => x.ToString().Trim().Trim('"'))
+                    .Where(x => !string.IsNullOrEmpty(x))
+                    .ToArray();
                 switch(command[0])
                 {
                     case "CATALOG": { cueSheet.Catalog = command[1]; break; }
