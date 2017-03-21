@@ -76,6 +76,7 @@ namespace Levolution.Data.CueSheet
                 var command = regex.Matches(line).Cast<object>().Select(x => x.ToString().Trim()).Where(x => !string.IsNullOrEmpty(x)).ToArray();
                 switch(command[0])
                 {
+                    case "CATALOG": { cueSheet.Catalog = command[1]; break; }
                     case "TITLE": { currentInfo.Title = command[1]; break; }
                     case "PERFORMER": { currentInfo.Performer = command[1]; break; }
                     case "SONGWRITER": { currentInfo.SongWriter = command[1]; break; }
